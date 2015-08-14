@@ -27,7 +27,7 @@ class RepeatCounter
             return $occurences;
 
         } else {
-            // If $word_to_find has non-alphanumeric characters, return an error
+            // Error cases
             return -1;
         }
     }
