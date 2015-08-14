@@ -46,6 +46,20 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_countRepeats_onceEnd()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "fox";
+            $input_phrase = "the quick brown fox";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
 
 
 
