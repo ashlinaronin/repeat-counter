@@ -3,7 +3,7 @@
 # Input: string word, string phrase
 # Output: integer
 
-1. Word and phrase are equivalent
+1. Word and phrase are equivalent.
 Input: "the", "the"
 Output: 1
 
@@ -51,15 +51,19 @@ Output: 1
 Input: "needle", "like a needle in a %&$#* haystack"
 Output: 1
 
+13. Check for partial matches
+Input: "the", "there is a large amount of these"
+Output: 0
+
 # Error cases
-13. Disallow non-alphanumeric characters in word input
+14. Disallow non-alphanumeric characters in word input
 Input: "#%479042@{}{}34???", "Welcome to the matrix"
 Output: -1
 
-14. No word entered
+15. No word entered
 Input: "", "Your phrase here"
 Output: -1
 
-15. No phrase entered
+16. No phrase entered
 Input: "word", ""
 Output: -2
