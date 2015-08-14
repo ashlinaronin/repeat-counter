@@ -1,6 +1,6 @@
 # _Repeat Counter_
 
-##### _Count string occurrences in a phrase,_ 08/14/15_
+##### _Count string occurrences in a phrase,_ 08/14/15
 
 #### By **Ashlin Aronin**
 

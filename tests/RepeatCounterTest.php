@@ -176,7 +176,7 @@
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $input_word = "#%479042@{}{}34???";
+            $input_word = "#%479042@{}{ }34???";
             $input_phrase = "Welcome to the matrix!";
 
             //Act

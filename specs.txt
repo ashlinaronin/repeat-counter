@@ -4,62 +4,77 @@
 # Output: integer
 
 1. Word and phrase are equivalent.
-Input: "the", "the"
-Output: 1
+*Justification: One word string is the simplest test for equivalency. I could have used a one-letter string but a one-letter "phrase" doesn't really work towards the proposed functionality of the method.
+*Input: "the", "the"
+*Output: 1
 
 2. Word occurs once at beginning of phrase
-Input: "the", "the quick brown fox"
-Output: 1
+*Justification: Testing for equivalency of a sub-string is simpler than searching the whole string.
+*Input: "the", "the quick brown fox"
+*Output: 1
 
 3. Word occurs once in middle of phrase
-Input: "brown", "the quick brown fox"
-Output: 1
+*Justification: Now we need to move on to look in the middle of the phrase for the target word.
+*Input: "brown", "the quick brown fox"
+*Output: 1
 
 4. Word occurs once at end of phrase
-Input: "fox", "the quick brown fox"
-Output: 1
+*Justification: Before checking other cases, we want to make sure the target word is being found anywhere in the phrase.
+*Input: "fox", "the quick brown fox"
+*Output: 1
 
 5. Word occurs twice at beginning of phrase
-Input: "bye", "bye bye friend"
-Output: 2
+*Justification: Now that we've established that we can find single occurrences of the target word anywhere in the phrase, we need to find multiple occurrences.
+*Input: "bye", "bye bye friend"
+*Output: 2
 
 6. Word occurs thrice anywhere in phrase
-Input: "the", "i wonder about the well-being of the animals in the zoo"
-Output: 3
+*Justification: We've found double occurrences, check triples.
+*Input: "the", "i wonder about the well-being of the animals in the zoo"
+*Output: 3
 
 7. Word does not occur in phrase
-Input: "hello", "goodbye world"
-Output: 0
+*Justification: Now we should be able to find many occurrences of the word anywhere in the phrase, but what if it doesn't occur at all?
+*Input: "hello", "goodbye world"
+*Output: 0
 
 8. Allow mixed-case words
-Input: "heLLo", "hello world hello hello"
-Output: 3
+*Justification: Very basic example to make sure we are successfully disregarding case of input word.
+*Input: "heLLo", "hello world hello hello"
+*Output: 3
 
 9. Allow mixed-case phrases
-Input: "hElLo", "hEllO WOrLd heLLo Hello"
-Output: 3
+*Justification: Now that we are successfully disregarding the case of input word, make sure we can find it in a string including mixed cases.
+*Input: "hElLo", "hEllO WOrLd heLLo Hello"
+*Output: 3
 
 10. Ignore punctuation in phrase
-Input: "you", "Hey you! How are you?"
-Output: 2
+*Justification: We want to make sure that punctuation isn't glued together with words, thus neglecting some possible matches.
+*Input: "you", "Hey you! How are you?"
+*Output: 2
 
 11. Allow numerical word inputs
-Input: "l33t", "Wow wouldja look at that l33t hackz0r!"
-Output: 1
+*Justification: Input words should be able to include numbers-- we don't need to apply an overly normative definition of "word" to our users.
+*Input: "l33t", "Wow wouldja look at that l33t hackz0r!"
+*Output: 1
 
 12. Check for partial matches
-Input: "the", "there is a large amount of these"
-Output: 0
+*Justification: Make sure multiple words including but not limited to the target word do not return false positives.
+*Input: "the", "there is a large amount of these"
+*Output: 0
 
 # Error cases
 13. Disallow non-alphanumeric characters in word input
-Input: "#%479042@{}{}34???", "Welcome to the matrix"
-Output: -1
+*Justification: If punctuation, spaces or any other non-alphanumeric characters are included in the input word, we should return an error instead of performing the search.
+*Input: "#%479042@{}{ }34???", "Welcome to the matrix"
+*Output: -1
 
 14. No word entered
-Input: "", "Your phrase here."
-Output: -1
+*Justification: If no search word is entered, we should also return an error instead of performing the search.
+*Input: "", "Your phrase here."
+*Output: -1
 
 15. No phrase entered
-Input: "word", ""
-Output: -1
+*Justification: If no phrase is entered, we should also return an error instead of performing the search.
+*Input: "word", ""
+*Output: -1
