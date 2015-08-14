@@ -1,28 +1,28 @@
 # _Repeat Counter_
 
-##### _Count string occurrences in a phrase, 08/14/15_
+##### _Count string occurrences in a phrase,_ 08/14/15_
 
-#### By _**Ashlin Aronin**_
+#### By **Ashlin Aronin**
 
 ## Description
 
-_Repeat Counter counts the occurrences of a given word in a phrase. The string to find must be a single word with no special characters, but the phrase to search may be any length including spaces and special characters. However, special characters will be ignored during the search. The potential applications for this functionality are limitless!_
+Repeat Counter counts the occurrences of a given word in a phrase. The string to find must be a single word with no special characters, but the phrase to search may be any length including spaces and special characters. However, special characters will be ignored during the search. The potential applications for this functionality are limitless!
 
 ## Setup
 
-* _Clone this repository from GitHub ([instructions here](https://www.learnhowtoprogram.com/lessons/git-clone "Git Clone instructions from Epicodus"))_
-* _Run "composer install" in the project directory_
-* _Start a PHP server in the web subdirectory ("php -S localhost:8000)_
-* _Navigate to localhost:8000 in a browser_
-* _Enjoy!_
+* Clone this repository from GitHub ([instructions here](https://www.learnhowtoprogram.com/lessons/git-clone "Git Clone instructions from Epicodus"))
+* Run "composer install" in the project directory
+* Start a PHP server in the web subdirectory ("php -S localhost:8000)
+* Navigate to localhost:8000 in a browser
+* Enjoy!
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit_
+HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit
 
 ### Legal
 
-Copyright (c) 2015 **_Ashlin Aronin_**
+Copyright (c) 2015 **Ashlin Aronin**
 
 This software is licensed under the MIT license.
 
