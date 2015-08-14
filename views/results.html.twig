@@ -1,25 +1,16 @@
 <html>
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-        <title>Word Counter</title>
+        <title>Your Word Count Results</title>
     </head>
     <body>
         <div class="container">
-            <h3>Count occurences of a given word in a given phrase.</h3>
-            <form action="/results" method="get">
-                <div class="form-group">
-                    <label class="text-danger" for="word">Word to find:</label>
-                    <input name="word" id="word" type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label class="text-danger" for="phrase">Phrase to search:</label>
-                    <input name="phrase" id="phrase" type="text" class="form-control" />
-                </div>
-                    <button type="submit" class="btn btn-success">Count 'em!</button>
-            </form>
+            {% if word_repeats != -1 %}
+                <h3> Your word occured {{ word_repeats }} times in the phrase.</h3>
+            {% else %}
+                <h3> Invalid word or phrase...please <a href="/">try again</a>.</h3>
+            {% endif %}
+            <a href="/"><button type="submit" class="btn btn-success">Home</button></a>
         </div>
     </body>
 </html>
-
-
-            {# add regex pattern checking to forms #}
