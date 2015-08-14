@@ -4,8 +4,8 @@ class RepeatCounter
 {
     function countRepeats($word_to_find, $phrase)
     {
-        // Make sure word_to_find is alphanumeric before executing anything else
-        if (ctype_alnum($word_to_find)) {
+        // Make sure word_to_find exists and is alphanumeric before executing anything else
+        if (!empty($word_to_find) && ctype_alnum($word_to_find)) {
 
             // Strip all non-alphanumeric chars from phrase using find and replace regular expression
             // Arg 1 is pattern, arg 2 is replacement, arg 3 is subject to act on

@@ -57,7 +57,7 @@ Input: "#%479042@{}{}34???", "Welcome to the matrix"
 Output: -1
 
 14. No word entered
-Input: "", "Your phrase here"
+Input: "", "Your phrase here."
 Output: -1
 
 15. No phrase entered

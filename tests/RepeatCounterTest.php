@@ -186,6 +186,20 @@
             $this->assertEquals(-1, $result);
         }
 
+        function test_countRepeats_noWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "";
+            $input_phrase = "Your phrase here.";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(-1, $result);
+        }
+
 
 
 
