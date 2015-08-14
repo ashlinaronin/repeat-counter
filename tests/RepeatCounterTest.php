@@ -32,6 +32,21 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_countRepeats_onceMiddle()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "brown";
+            $input_phrase = "the quick brown fox";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
+
 
 
 
