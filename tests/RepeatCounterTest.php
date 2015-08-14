@@ -158,6 +158,21 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_countRepeats_partialMatches()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "the";
+            $input_phrase = "There are many of these in their thesis.";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
+
+
 
 
 
