@@ -20,8 +20,11 @@
             $_GET['word'], $_GET['phrase']
         );
 
+        // Pass twig word and phrase so we can display them with results
         return $app['twig']->render('results.html.twig', array(
-            'word_repeats' => $word_repeats
+            'word_repeats' => $word_repeats,
+            'word' => $_GET['word'],
+            'phrase' => $_GET['phrase']
         ));
     });
 

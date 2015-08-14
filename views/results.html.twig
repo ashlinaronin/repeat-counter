@@ -6,15 +6,21 @@
     <body>
         <div class="container">
             {% if word_repeats > 1 %}
-                <h3>Your word occured {{ word_repeats }} times in the phrase.</h3>
+                <h3>Your word occured {{ word_repeats }} times.</h3>
             {% elseif word_repeats == 1 %}
-                <h3>Your word occured once in the phrase.</h3>
+                <h3>Congratulations! Your word occured once.</h3>
             {% elseif word_repeats == 0 %}
-                <h3>Your word did not occur in the phrase.</h3>
+                <h3>I'm so sorry! Your word did not occur.</h3>
             {% else %}
                 <h3>Invalid word or phrase...please <a href="/">try again</a>.</h3>
             {% endif %}
-            <a href="/"><button type="submit" class="btn btn-success">Home</button></a>
+
+            {% if word_repeats != -1 %}
+                <h5>Your word: {{ word }}</h5>
+                <h5>Your phrase: {{ phrase }}</h5>
+            {% endif %}
+
+            <a href="/"><button type="submit" class="btn btn-success">Play again!</button></a>
         </div>
     </body>
 </html>
