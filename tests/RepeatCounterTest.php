@@ -211,7 +211,7 @@
             $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
 
             //Assert
-            $this->assertEquals(-2, $result);
+            $this->assertEquals(-1, $result);
         }
 
 

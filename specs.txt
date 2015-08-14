@@ -62,4 +62,4 @@ Output: -1
 
 15. No phrase entered
 Input: "word", ""
-Output: -2
+Output: -1
