@@ -2,11 +2,18 @@
 
 class RepeatCounter
 {
-    function countRepeats($word, $phrase)
+    function countRepeats($word_to_find, $phrase)
     {
         $phrase_words = explode(" ", $phrase);
+        $occurences = 0;
 
-        return $word == $phrase_words[0];
+        foreach ($phrase_words as $word) {
+            if ($word == $word_to_find) {
+                $occurences++;
+            }
+        }
+
+        return $occurences;
     }
 }
 
