@@ -200,6 +200,21 @@
             $this->assertEquals(-1, $result);
         }
 
+        function test_countRepeats_noPhrase()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "word";
+            $input_phrase = "";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(-2, $result);
+        }
+
+
 
 
 
