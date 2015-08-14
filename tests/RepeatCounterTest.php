@@ -144,6 +144,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_countRepeats_numericalWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "l33t";
+            $input_phrase = "Wow wouldja look at that l33t hackz0r!";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
 
 
 
