@@ -102,6 +102,20 @@
             $this->assertEquals(0, $result);
         }
 
+        function test_countRepeats_mixedCaseWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "heLLo";
+            $input_phrase = "hello world hello hello";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
 
 
 
