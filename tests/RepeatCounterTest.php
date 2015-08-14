@@ -130,6 +130,21 @@
             $this->assertEquals(3, $result);
         }
 
+        function test_countRepeats_ignorePhrasePunctuation()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "you";
+            $input_phrase = "Hey you! How are you?";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
+
 
 
 
