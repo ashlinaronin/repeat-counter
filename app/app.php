@@ -23,7 +23,7 @@
         return $app['twig']->render('results.html.twig', array(
             'word_repeats' => $word_repeats
         ));
-    })
+    });
 
     return $app;
 
