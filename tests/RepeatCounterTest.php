@@ -172,6 +172,20 @@
             $this->assertEquals(0, $result);
         }
 
+        function test_countRepeats_specialCharsWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "#%479042@{}{}34???";
+            $input_phrase = "Welcome to the matrix!";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(-1, $result);
+        }
+
 
 
 
