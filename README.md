@@ -12,7 +12,7 @@ Repeat Counter counts the occurrences of a given word in a phrase. The string to
 
 * Clone this repository from GitHub ([instructions here](https://www.learnhowtoprogram.com/lessons/git-clone "Git Clone instructions from Epicodus"))
 * Run "composer install" in the project directory
-* Start a PHP server in the web subdirectory ("php -S localhost:8000)
+* Start a PHP server in the web subdirectory ("php -S localhost:8000")
 * Navigate to localhost:8000 in a browser
 * Enjoy!
 
