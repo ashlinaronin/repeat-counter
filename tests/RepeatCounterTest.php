@@ -60,6 +60,20 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_countRepeats_twiceBeginning()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "bye";
+            $input_phrase = "bye bye friend";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
 
 
 
