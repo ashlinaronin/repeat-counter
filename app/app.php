@@ -9,8 +9,21 @@
     ));
 
     //Form route
+    $app->get("/", function() use ($app) {
+        return $app['twig']->render('form.html.twig');
+    });
 
     //Result route
+    $app->get("/results", function() use ($app) {
+        $my_RepeatCounter = new RepeatCounter;
+        $word_repeats = $my_RepeatCounter->countRepeats(
+            $_GET['word'], $_GET['phrase']
+        );
+
+        return $app['twig']->render('results.html.twig', array(
+            'word_repeats' => $word_repeats
+        ));
+    })
 
     return $app;
 
