@@ -74,6 +74,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_countRepeats_thriceAnywhere()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "the";
+            $input_phrase = "i wonder about the well-being of the animals in the zoo";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
 
 
 
