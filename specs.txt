@@ -1,0 +1,65 @@
+### Specs for method countRepeats in class RepeatCounter
+## Check for word frequency in a given phrase
+# Input: string word, string phrase
+# Output: integer
+
+1. Word and phrase are equivalent
+Input: "the", "the"
+Output: 1
+
+2. Word occurs once at beginning of phrase
+Input: "the", "the quick brown fox"
+Output: 1
+
+3. Word occurs once in middle of phrase
+Input: "brown", "the quick brown fox"
+Output: 1
+
+4. Word occurs once at end of phrase
+Input: "fox", "the quick brown fox"
+Output: 1
+
+5. Word occurs twice at beginning of phrase
+Input: "bye", "bye bye friend"
+Output: 2
+
+6. Word occurs thrice anywhere in phrase
+Input: "the", "i wonder about the well-being of the animals in the zoo"
+Output: 3
+
+7. Word does not occur in phrase
+Input: "hello", "goodbye world"
+Output: 0
+
+8. Allow mixed-case words
+Input: "heLLo", "hello world hello hello"
+Output: 3
+
+9. Allow mixed-case phrases
+Input: "hElLo", "hEllO WOrLd heLLo Hello"
+Output: 3
+
+10. Ignore punctuation in phrase
+Input: "you", "Hey you! How are you?"
+Output: 2
+
+11. Allow numerical word inputs
+Input: "l33t", "Wow wouldja look at that l33t hackz0r!"
+Output: 1
+
+12. Allow non-alphanumeric characters in phrase
+Input: "needle", "like a needle in a %&$#* haystack"
+Output: 1
+
+# Error cases
+13. Disallow non-alphanumeric characters in word input
+Input: "#%479042@{}{}34???", "Welcome to the matrix"
+Output: -1
+
+14. No word entered
+Input: "", "Your phrase here"
+Output: -1
+
+15. No phrase entered
+Input: "word", ""
+Output: -2
