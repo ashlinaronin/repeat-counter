@@ -88,6 +88,20 @@
             $this->assertEquals(3, $result);
         }
 
+        function test_countRepeats_notInPhrase()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "hello";
+            $input_phrase = "goodbye world";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_phrase);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
+
 
 
 
