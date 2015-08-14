@@ -47,23 +47,19 @@ Output: 2
 Input: "l33t", "Wow wouldja look at that l33t hackz0r!"
 Output: 1
 
-12. Allow non-alphanumeric characters in phrase
-Input: "needle", "like a needle in a %&$#* haystack"
-Output: 1
-
-13. Check for partial matches
+12. Check for partial matches
 Input: "the", "there is a large amount of these"
 Output: 0
 
 # Error cases
-14. Disallow non-alphanumeric characters in word input
+13. Disallow non-alphanumeric characters in word input
 Input: "#%479042@{}{}34???", "Welcome to the matrix"
 Output: -1
 
-15. No word entered
+14. No word entered
 Input: "", "Your phrase here"
 Output: -1
 
-16. No phrase entered
+15. No phrase entered
 Input: "word", ""
 Output: -2
